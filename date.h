@@ -1,33 +1,15 @@
-/***********************************************************************
-* Program:
-*    Date header  
-*    Brother Comeau, CS165
-* Author:
-*    Leonardo Santos
-* Summary: 
-*    This will be the header of the program, here I will declare my
-*    date class.
-*
-*    Estimated:  1.0 hrs   
-*    Actual:     1.0 hrs
-************************************************************************/
+/********************************************************************
+ * File: date.h
+ * Purpose: Holds the definition of the Date class.
+ ********************************************************************/
 
-//#ifndef DATE_H
-//#define DATE_H
+#ifndef DATE_H
+#define DATE_H
 
-class Date
-{
-  private:
-     int month;
-     int day;
-     int year;
+// put your class definition here
+// along with the data members, and method prototypes
 
-  public:
-     void set();
-     void displayAmerican();
-     void displayEuropean();
-     void displayISO();
 
-};
 
-//#endif
+
+#endif

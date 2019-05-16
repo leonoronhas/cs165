@@ -1,32 +1,23 @@
-/***********************************************************************
-* Program:
-*    CheckPoint 04b   
-*    Brother Comeau, CS165
-* Author:
-*    Leonardo Santos
-* Summary: 
-*    This will be the driver program.
-*
-*    Estimated:  0.0 hrs   
-*    Actual:     0.0 hrs
-************************************************************************/
+/*********************************************************************
+ * File: check04b.cpp
+ * Purpose: contains the main method to exercise the Date class.
+ *********************************************************************/
+
+#include "date.h"
 
 #include <iostream>
-#include "date.h"
 using namespace std;
 
 int main()
 {
-   //declare the date object
-   Date date;
+   // prompt for month, day, year
+   
+   // create a Date object
+   
+   // set its values
+   
+   // call each display function
 
-   //get the date from the user
-   date.set();
-
-   //call the methods
-   date.displayAmerican();
-   date.displayEuropean();
-   date.displayISO();
 
    return 0;
 }
