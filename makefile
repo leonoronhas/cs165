@@ -1,16 +1,16 @@
 ###############################################################
 # Program:
-#     Team Activity 04, Classes
-#     Brother {Burton, Falin, Ercanbrack}, CS165
+#     Checkpoint 05b, Constructors
+#     Brother Comeau, CS165
 # Author:
-#     your name here
+#     Leonardo Santos
 # Summary:
-#     Put your summary code here... 
+#     Summaries are not necessary for checkpoint assignments.
 ###############################################################
 
 
 # We will learn fancier compilation steps later, but this is
 # good enough for now...
-a.out : rational.h rational.cpp ta04.cpp
-	g++ rational.cpp ta04.cpp
+a.out : money.h money.cpp check05b.cpp
+	g++ money.cpp check05b.cpp
 
