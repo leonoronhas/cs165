@@ -1,0 +1,58 @@
+/***************************************************************
+ * File: product.h
+ * Author: Leonardo Santos
+ * Purpose: Contains the definition of the Product class
+ ***************************************************************/
+#ifndef PRODUCT_H
+#define PRODUCT_H
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Product
+{
+   private:
+      string name;
+      string description;
+      float basePrice;
+      float weight;
+      float salesTax;
+      float shipRate;
+      float totalPrice;
+
+         
+   public:
+      //Constructors
+      Product();
+      Product(string name,
+              string description,
+              float basePrice,
+              float weight);
+
+      //Getters
+      string getName() const { return name; }
+      string getDescription() const { return description; }
+      float getBasePrice() const { return basePrice; }
+      float getWeight() const { return weight; }
+
+      //Setters
+      void prompt();
+      void setName(string name);
+      void setDescription(string description);
+      void setBasePrice(float basePrice);
+      void setWeight(float weight);
+
+      //Display
+      void displayAdvertising();
+      void displayInventory();
+      void displayReceipt();
+      
+      //Shipping and Sales cost
+      void getSalesTax();
+      void getShippingCost();
+      void getTotalPrice();
+  
+};
+
+#endif

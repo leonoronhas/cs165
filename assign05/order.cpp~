@@ -1,0 +1,45 @@
+// File: order.cpp
+
+#include "order.h"
+#include "product.h"
+
+//Method bodies for order class
+
+//Constructors
+Order :: Order()
+{
+   quantity = 0;   
+}
+
+Order :: Order(Product product, int quantity, Customer customer)
+{
+   setProduct(product);
+   setQuantity(quantity);
+   setCustomer(customer);   
+}
+
+//Setters
+void Order :: setProduct(Product product)
+{
+   this->product = product;
+}
+
+void Order :: setQuantity(int quantity)
+{
+   this->quantity = quantity;   
+}
+
+void Order :: setCustomer(Customer customer)
+{
+   this->customer = customer;   
+}
+
+/*string Order :: getShippingZip()
+{
+   return customer.getCustomer().getAddress().getZip();   
+}*/
+
+float Order :: getTotalPrice() const
+{
+   return (this->product.getProduct().getTotalPrice() * this-> quantity);
+}

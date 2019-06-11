@@ -1,0 +1,56 @@
+// File: address.cpp
+#include <iostream>
+#include <string>
+#include "address.h"
+#include "customer.h"
+
+using namespace std;
+
+/***********************************************
+ * Methods for the address class
+ * ********************************************/
+
+//Constructors
+Address :: Address()
+{
+   street = "unknown";
+   city = "";
+   state = "";
+   zip = "00000";
+}
+
+Address :: Address(string street,
+                   string city,
+                   string state,
+                   string zip)
+{
+   setStreet(street);
+   setCity(city);
+   setState(state);
+   setZip(zip);   
+}
+
+//Setters
+void Address :: setStreet(string street)
+{
+   this->street = street;   
+}
+
+void Address :: setCity(string city)
+{
+   this->city = city;   
+}
+void Address :: setState(string state)
+{
+   this->state = state;   
+}
+void Address :: setZip(string zip)
+{
+   this->zip = zip;   
+}
+
+void Address :: display() const
+{
+   cout << street << endl;
+   cout << city << ", " << state << " " << zip << endl; 
+}
